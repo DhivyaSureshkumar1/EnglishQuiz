@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.education.englishquiz.databinding.FragmentQuizBinding
@@ -61,7 +60,7 @@ class QuizFragment : Fragment() {
         val quizDatabaseHelper = QuizDatabaseHelper(context)
         grade = user.grade
         if (savedInstanceState == null) {
-            var questionList1 = quizDatabaseHelper.getAllQuestions(grade)
+            val questionList1 = quizDatabaseHelper.getAllQuestions(grade)
             questionList = questionList1.shuffled()
             showNextQuestion()// show first question
             checkCorrectAnswer()// checking answer and displaying correct answer for first question
@@ -70,7 +69,6 @@ class QuizFragment : Fragment() {
             currentQuestion = questionList[questionCount - 1]
         }
         binding?.startBtn?.setOnClickListener { startQuiz()}
-        binding?.cleatBtn?.setOnClickListener{binding?.radioGroup?.clearCheck()}
 
     }
 
