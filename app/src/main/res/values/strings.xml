@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">English Quiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="quiz_page_title">QUIZZZZZ!!</string>
+    <string name="welcome_message">Welcome, friend</string>
+    <string name="timer">TIMER : 00:00</string>
+    <string name="ques_no">Question : 1/10</string>
+    <string name="instruction">Instruction</string>
+    <string name="question">Question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Finish">FINISH</string>
+    <string name="summary_page_title">Check your answers..</string>
+    <string name="clear">Clear</string>
+    <string name="start_quiz_again">Start Quiz Again!</string>
+    <string name="quiz_image">Quiz_Image</string>
+    <string name="name">Name</string>
+    <string name="grade">Grade</string>
+    <string name="start_quiz">Start Quiz!</string>
+</resources>
